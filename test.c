@@ -45,8 +45,8 @@ void fizzbuzz_test_1(void) {
     char result[256];
     memset(result, '\0', sizeof(result));
 
-    fizzbuzz(1, result);
-	//fizzbuzz(2, result);  //err
+    //fizzbuzz(1, result);
+    fizzbuzz(2, result);  //err
 
     CU_ASSERT_STRING_EQUAL("1", result);
     return;
