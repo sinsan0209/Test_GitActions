@@ -1,20 +1,20 @@
 name: CI
- on:
-   push:
-     branches: [ master, main ]
+  on:
+    push:
+      branches: [ master, main ]
 
- jobs:
-   build:
-     runs-on: ubuntu-latest
+  jobs:
+    build:
+      runs-on: ubuntu-latest
 
-     steps:
-       - uses: actions/checkout@v2
+      steps:
+        - uses: actions/checkout@v2
 
-       - name: Install CUnit
-         run: |
-             sudo apt update
-             sudo apt install -y libcunit1-dev
-       - name: CUnit Test
-         run: |
-             make test
-             ./test
+        - name: Install CUnit
+          run: |
+            sudo apt update
+            sudo apt install -y libcunit1-dev
+        - name: CUnit Test
+          run: |
+            make test
+            ./test
