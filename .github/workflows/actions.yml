@@ -8,13 +8,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v5
+        timeout-minutes: 3
 
       - name: Install CUnit
         run: |
             sudo apt update
             sudo apt install -y libcunit1-dev
+        timeout-minutes: 3
       - name: CUnit Test
         run: |
             make test
             ./test
+        timeout-minutes: 3
+
