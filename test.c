@@ -24,13 +24,13 @@ int main(void) {
 
     suite = CU_add_suite("FizzBuzz Test", NULL, NULL);
     CU_add_test(suite, "FizzBuzz_Test_1", fizzbuzz_test_1);
-    //CU_add_test(suite, "FizzBuzz_Test_3", fizzbuzz_test_3);
-    //CU_add_test(suite, "FizzBuzz_Test_5", fizzbuzz_test_5);
-    //CU_add_test(suite, "FizzBuzz_Test_15", fizzbuzz_test_15);
-    //CU_add_test(suite, "FizzBuzz_Test_30", fizzbuzz_test_30);
+    CU_add_test(suite, "FizzBuzz_Test_3", fizzbuzz_test_3);
+    CU_add_test(suite, "FizzBuzz_Test_5", fizzbuzz_test_5);
+    CU_add_test(suite, "FizzBuzz_Test_15", fizzbuzz_test_15);
+    CU_add_test(suite, "FizzBuzz_Test_30", fizzbuzz_test_30);
 
     // テストを追加
-    //suite = CU_add_suite("FizzBuzz String Test", NULL, NULL);
+    suite = CU_add_suite("FizzBuzz String Test", NULL, NULL);
     CU_add_test(suite, "get_str_test", get_str_test);
 
     // CU_console_run_tests();
