@@ -18,7 +18,7 @@ $(OBJS): fizzbuzz.h
 
 .PHONY: check
  check: test
- 	@./test
+	@./test
  
 .PHONY: clean
 clean:
