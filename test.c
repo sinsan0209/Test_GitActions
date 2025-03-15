@@ -43,7 +43,8 @@ int main(void) {
 
 void fizzbuzz_test_1(void) {
     char result[256];
-    memset(result, '\0', sizeof(result));
+    //memset(result, '\0', sizeof(result));
+    memset(result, '2', sizeof(result));
 
     fizzbuzz(1, result);
 
@@ -75,7 +76,7 @@ void fizzbuzz_test_15(void) {
     char result[256];
     memset(result, '\0', sizeof(result));
 
-    fizzbuzz(14, result);
+    fizzbuzz(15, result);
 
     CU_ASSERT_STRING_EQUAL("FizzBuzz", result);
     return;
